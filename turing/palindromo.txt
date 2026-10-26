@@ -1,0 +1,28 @@
+q0
+halt
+q0 a q_bus_a B R
+q0 b q_bus_b B R
+q0 c q_bus_c B R
+q0 B halt B S
+q_bus_a a q_bus_a a R
+q_bus_a b q_bus_a b R
+q_bus_a c q_bus_a c R
+q_bus_a B q_chk_a B L
+q_bus_b a q_bus_b a R
+q_bus_b b q_bus_b b R
+q_bus_b c q_bus_b c R
+q_bus_b B q_chk_b B L
+q_bus_c a q_bus_c a R
+q_bus_c b q_bus_c b R
+q_bus_c c q_bus_c c R
+q_bus_c B q_chk_c B L
+q_chk_a a q_ret B L
+q_chk_a B halt B S
+q_chk_b b q_ret B L
+q_chk_b B halt B S
+q_chk_c c q_ret B L
+q_chk_c B halt B S
+q_ret a q_ret a L
+q_ret b q_ret b L
+q_ret c q_ret c L
+q_ret B q0 B R

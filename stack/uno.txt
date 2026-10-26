@@ -1,0 +1,13 @@
+q0
+Z
+q0 a Z -> q0 aZ
+q0 b Z -> q0 bZ
+q0 a a -> q0 aa
+q0 b a -> q0 ba
+q0 b b -> q0 bb
+q0 c a -> q1 .
+q0 c b -> q1 .
+q0 . Z -> q1 .
+q1 c a -> q1 .
+q1 c b -> q1 .
+q1 . Z -> q2 .

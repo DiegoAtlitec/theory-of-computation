@@ -1,0 +1,8 @@
+q0
+halt
+q0 0 q0 1 R
+q0 1 q0 0 R
+q0 B q_vuelve B L
+q_vuelve 0 q_vuelve 0 L
+q_vuelve 1 q_vuelve 1 L
+q_vuelve B halt B R

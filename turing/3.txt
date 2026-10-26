@@ -1,0 +1,12 @@
+q0
+halt
+q0 0 q0 0 R
+q0 1 q0 1 R
+q0 # q_check_next # R
+q_check_next # q_check_next # R
+q_check_next 0 q_carry_0 # L
+q_check_next 1 q_carry_1 # L
+q_check_next B q_clean B L
+q_carry_0 # q_check_next 0 R
+q_carry_1 # q_check_next 1 R
+q_clean # halt B S

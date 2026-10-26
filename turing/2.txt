@@ -1,0 +1,13 @@
+q0
+halt
+q0 a q_busca_fin_a a R
+q0 b q_busca_fin_b b R
+q0 B halt B S
+q_busca_fin_a a q_busca_fin_a a R
+q_busca_fin_a b q_busca_fin_a b R
+q_busca_fin_a B q_verifica_a B L
+q_busca_fin_b a q_busca_fin_b a R
+q_busca_fin_b b q_busca_fin_b b R
+q_busca_fin_b B q_verifica_b B L
+q_verifica_a a halt a S
+q_verifica_b b halt b S

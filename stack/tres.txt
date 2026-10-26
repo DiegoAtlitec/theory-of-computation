@@ -1,0 +1,9 @@
+q0
+Z
+q0 a Z -> q0 AZ
+q0 a A -> q0 AA
+q0 b A -> q1 A
+q1 c A -> q2 .
+q2 c A -> q2 .
+q2 . A -> q2 .
+q2 . Z -> q2 .

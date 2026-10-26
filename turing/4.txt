@@ -1,0 +1,27 @@
+q0
+halt
+q0 1 q0 1 R
+q0 # q_busca_der # R
+q_busca_der x q_busca_der x R
+q_busca_der 1 q_busca_izq x L
+q_busca_der B q_limpiar_x B L
+q_busca_izq x q_busca_izq x L
+q_busca_izq # q_cruza_izq # L
+q_cruza_izq d q_cruza_izq d L
+q_cruza_izq 1 q_regresa_der d R
+q_cruza_izq B q_caso_cero 0 R
+q_regresa_der d q_regresa_der d R
+q_regresa_der # q_busca_der # R
+q_caso_cero d q_caso_cero B R
+q_caso_cero # q_caso_cero B R
+q_caso_cero x q_caso_cero B R
+q_caso_cero 1 q_caso_cero B R
+q_caso_cero B halt B S
+q_limpiar_x x q_limpiar_x B L
+q_limpiar_x # q_limpiar_d B L
+q_limpiar_d d q_limpiar_d B L
+q_limpiar_d 1 q_final_ok 1 L
+q_limpiar_d B halt 0 S
+q_final_ok d q_final_ok B L
+q_final_ok 1 q_final_ok 1 L
+q_final_ok B halt B S

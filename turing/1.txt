@@ -1,0 +1,11 @@
+q_EE
+halt
+q_EE 0 q_EO 0 R
+q_EE 1 q_OE 1 R
+q_EO 0 q_EE 0 R
+q_EO 1 q_OO 1 R
+q_OE 0 q_OO 0 R
+q_OE 1 q_EE 1 R
+q_OE B halt B S
+q_OO 0 q_OE 0 R
+q_OO 1 q_EO 1 R
